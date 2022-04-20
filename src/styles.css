@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu', serif;
+  font-weight: 400;
+  color: #143774;
+}
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+  display: block;
+}

@@ -1,0 +1,22 @@
+<article class="article-featured">
+  <h2 class="article-title">{{articles[0]['title']}}</h2>
+  <img src="" alt="" class="article-image">
+  <p class="article-info">{{articles[0]['info']}}</p>
+  <p class="article-body">{{articles[0]['body']}}</p>
+  <a href="{{articles[0]['imageSRC']}}" class="article-read-more"></a>
+</article>
+<article
+  class="article-recent"
+  *ngFor="let article of articles"
+>
+  <div class="article-recent-main">
+    <h2 class="article-title">{{article['title']}}</h2>
+    <p class="article-body">{{article['body']}}</p>
+    <a href="{{article['imageSRC']}}" class="article-read-more"></a>
+  </div>
+  <div class="article-recent-secondary">
+    <img src="{{article['imageSRC']}}" alt="" class="article-image">
+    <p class="article-info"></p>
+  </div>
+</article>
+
